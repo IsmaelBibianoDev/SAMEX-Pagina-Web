@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SAMEX</title>
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_menu.css">
+    <link rel="stylesheet" href="css/style_login.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Menu en el HEADER -->
+   <header class="header">
+    <nav class="navbar">
+        <a href="index.html">Inicio</a>
+        <a href="productos.html">Productos</a>
+          <a href="#">Contactanos</a>
+          <a href="#">Ubicacion</a>
+          <a href="#">Acerca</a>
+    </nav>
+
+    <form action="" class="search-bar">
+       <input type="text" placeholder="Buscar">
+       <button><i class='icon-search'></i></button>
+    </form>
+   </header>
+
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo">Compania de Seguros</h2>
+            <div class="text-item">
+                <h2>SAMEX<br></h2>
+                <p>"Porque en cada viaje importas tu y tu familia, asegura con los mejores"</p>
+            </div>
+        </div>
+
+        <!-- Creacion de Formulario de Login -->
+        <div class="login-section">
+            <div class="form-box login">
+                <form action="">
+                    <h2>Iniciar Sesión</h2>
+                    <div class="input-box">
+                        <span class="icon"><i class='icon-mail-alt'></i></span>
+                        <input type="email" required>
+                        <label >Correo Electronico</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='icon-key' ></i></span>
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <div class="remember-password">
+                        <label for=""><input type="checkbox">Recordar </label>
+                        <a href="#">Olvide mi Contraseña</a>
+                    </div>
+                    <button class="btn" type="submit">Iniciar Sesión</button>
+                    <div class="create-account">
+                        <p>Crear nueva cuenta <a href="#" class="register-link">Resgistrate</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <!--Creacion de fomrulario de Registro-->
+            <div class="form-box register">
+                <form action="">
+
+                    <h2>Registrar</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='icon-user'></i></span>
+                        <input type="text" required>
+                        <label >Usuario</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='icon-mail-alt'></i></span>
+                        <input type="email" required>
+                        <label >Correo Electronico</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><i class='icon-key' ></i></span>
+                        <input type="password" required>
+                        <label>Contraseña</label>
+                    </div>
+                    <button type="submit" class="btn">Regitrarme</button>
+                    <div class="create-account">
+                        <p>Ya tienes una cuenta? <a href="#" class="login-link">Iniciar Sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+     <!-- SIGN UP FORM CREATION -->
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
