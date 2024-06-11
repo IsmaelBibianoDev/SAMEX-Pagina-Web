@@ -12,7 +12,7 @@ body{
   
 }
 .background{
-    background: url("../img/backgroun3.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
     background-position: center;
     background-size:cover ;
     height: 100vh;
@@ -28,27 +28,29 @@ body{
     width: 75%;
     height: 550px;
     margin-top: 20px;
-    background: url("../img/backgroun3.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
     background-position: center;
     background-size:cover ;
     border-radius: 20px;
     overflow: hidden;
-    
-    
 }
-.item{
+.item {
     position: absolute;
     top: 0;
     left: 0;
-    width: 58%;
-    height: 100%;
+    width: 100%;
+    min-height: 100%; /* Cambiamos la altura fija a mínima */
+    height: auto; /* Cambiamos la altura fija a automática */
     color: #fff;
     background: transparent;
     padding: 80px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    overflow-y: auto; /* Agregamos la propiedad overflow-y para permitir el scroll vertical */
 }
+
+
 .item .logo{
     color: #fff;
     font-size: 30px;
@@ -61,14 +63,4 @@ body{
 .text-item p{
     font-size: 16px;
     margin: 20px 0;
-}
-
-.container .login-section{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: calc(100% - 58%);
-    height: 100%;
-    color: #fff;
-    backdrop-filter: blur(10px);
 }
